@@ -1,0 +1,29 @@
+---
+import Userbar from '../components/Userbar.astro'
+import Usersettings from '../components/Usersettings.astro'
+---
+
+<html lang="en" class='bg-blue-200/60 text-black'>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>QuickRPG Home</title>
+	</head>
+	<body class='flex flex-col text-center space-y-2'>
+
+		<Userbar />
+
+		<p>Welcome to QuickRPG Simulator</p>
+		<p>Here you can challenge your friends to random RPG matches</p>
+		<p>Or, you can set out on a Mother inspired journey!</p>
+
+		<a class='btn mx-auto' href="/game">Start Game</a>
+
+		<audio class='mx-auto bg-green-400' src="/wind-ambience.mp3" autoplay loop muted>Wind Ambience</audio>
+		
+		<Usersettings />
+
+	</body>
+</html>
